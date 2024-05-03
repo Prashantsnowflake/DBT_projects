@@ -10,6 +10,7 @@ WITH src_hosts_stream_table AS (
         *
     FROM
         {{ ref('src_hosts_stream') }}
+        /*anything*/
 )   
 SELECT
     * from src_hosts_stream_table
