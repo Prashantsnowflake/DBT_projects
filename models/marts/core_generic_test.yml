@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: dim_customers
+    columns:
+      - name: CUSTOMER_ID
+        tests:
+          - unique
+          - not_null
+
+  - name: increment_order
+    on_schema_change: "sync_all_columns"

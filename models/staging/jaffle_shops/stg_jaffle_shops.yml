@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: stg_customers
+    columns:
+      - name: last_name
+        tests:
+          - unique:
+              config:
+                severity: warn
+                warn_if: ">100"
+                store_failures: true
+
+  - name: stg_orders
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
