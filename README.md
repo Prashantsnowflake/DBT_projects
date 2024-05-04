@@ -1,3 +1,19 @@
+### for git 
+echo "# dbt_project" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Prashantsnowflake/dbt_project.git
+git push -u origin main
+
+### another 
+git remote add origin https://github.com/Prashantsnowflake/dbt_project.git
+git branch -M main
+git push -u origin main
+
+## below is the start of sbt project
+
 Welcome to your new dbt project!
 
 ### Using the starter project
